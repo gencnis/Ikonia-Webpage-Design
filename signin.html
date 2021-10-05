@@ -1,0 +1,85 @@
+<html>
+<head>
+	<title>Ikonia - Sign In</title>
+
+
+	<link rel="stylesheet" href="cssfile.css">
+
+</head>
+
+<body style="background-color: #ffe7de;">
+
+
+<div id="page">
+	<!--header-->
+	<div id="header">
+
+		<img style="width: 120px; height: 120px; float: left;" src="logo.jpg" alt="logo"/>
+
+		<h1 style="font-size: 50px;">
+			IKONIA
+			</br>
+		</h1>
+	</div> 
+
+	<div class="content" style="; text-align: center;">
+		<section style="float: center"> 
+    			<figure>
+    				<img src="concert.gif" style="width:400px;height:250px;">
+    			</figure>
+			</section> 
+
+		<div id="section" style="font-size: 21px; margin-left: 30%;"> <br/>
+			<strong> SIGN IN </strong> 
+			<br/><br/>
+			<em> Sign up for tours, news and new releases. </em>
+			<br/></br>
+    		
+    			
+    		<form action="/action_page.php">
+  				<label for="fname">Email/Username:</label><br>
+				<input type="text" id="fname" name="fname"><br>
+				<label for="lname">Password:</label><br>
+				<input type="text" id="lname" name="lname"><br><br>
+				<input type="submit" value="SIGN IN">
+			</form>
+
+			<button type="button"
+            		style="color: white; 
+                		width:170px; height:50px; 
+                		background-color: #B42A0E;
+                		display: inline-block"
+        				onclick="window.open('https://accounts.google.com/ServiceLogin')">
+        				<strong> Sign in with Google.</strong>
+    		</button>
+
+    		<button type="button" 
+            		style="color: white; 
+                		width:170px; height:50px; 
+                		background-color: #19498F;
+                		display: inline-block"
+                		onclick="window.open('https://www.facebook.com/')">
+        				<strong> Sign in with Facebook.</strong>
+    		</button>
+
+		</div>
+
+		</section>
+
+		<!--footer -->
+		<footer>
+			
+				<h4>© 2021 IKONIA</h4>
+					<p>
+						privacy | terms
+					</p>
+		</footer>
+
+		
+	</div>
+
+
+
+</div> <!--id page end-->
+</body>
+</html>

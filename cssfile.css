@@ -1,0 +1,32 @@
+/* layout formatting */
+
+		/*general*/
+		header, section, footer{
+			display: block;
+		}
+		
+		#header {
+    		background-color:#000000;
+    		color: #ffd6c7;
+    		float: center;
+    		text-align:center;
+    		padding:5px;
+    		height: 120xp;
+    
+		}
+
+		#section {
+ 			width:500px;
+    		float: center;
+    		padding:10px;
+    		margin-right: 500%;
+    		margin-left: 50%;
+
+    	}
+
+    	footer {
+			text-align: center;
+			padding: 3px;
+			background-color: black;
+			color: white;
+		}

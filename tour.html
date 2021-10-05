@@ -1,0 +1,185 @@
+<html>
+<head>
+	<title>Ikonia - Tour</title>
+
+	<!--I could not have a different css file for this, because the footer gave me big issues-->
+	<style type="text/css">
+	/* layout formatting */
+
+		/*general*/
+		header, section, aside, footer {
+			display: block;
+		}
+		
+		#header {
+    		background-color:#000000;
+    		color: #ffd6c7;
+    		text-align:center;
+    		padding:5px;
+    
+		}
+
+		/*main body*/
+		.content{
+			width: 74%;
+			float: left;
+		}
+
+		#section {
+ 			width:350px;
+    		float:left;
+    		padding:10px;	 	 
+		}
+
+
+		/*sidebar*/
+		aside{
+			width: 24%;
+			padding: 1%;
+			float: left;
+			background-color: white;
+		}
+
+		.basket{
+			overflow: scroll;
+		}
+
+		.item{
+			width: 90%;
+			height: 12%;
+			margin: 5%;
+			padding: 2%;
+			background-color: lightgray;
+		}
+
+		.price{
+			text-align: right;
+		}
+
+		.order{
+			width: 60%;
+			margin: auto;
+			margin-bottom: 10%;
+			padding: 1%;
+
+			text-align: center;
+			color: white;
+			background-color: black;
+		}
+
+    	footer {
+			text-align: center;
+			padding: 3px;
+			background-color: black;
+			color: white;
+			margin: auto;
+		}
+
+	</style>
+
+</head>
+
+<body style="background-color: #ffe7de;">
+	<div id="page">
+		<!--header-->
+		<div id="header">
+
+			<img style="width: 120px; height: 120px; float: left;" src="logo.jpg" alt="logo"/>
+
+			<h1 style="font-size: 50px;">
+				IKONIA
+				</br>
+			</h1>
+		</div> 
+
+
+		<!--main body-->
+		<div class="content" style="text-align: center;">
+			<h2> UPCOMING TOUR INFORMATION</h2>
+			</br>
+			</br>
+			</br>
+
+			<div style="float: center"> 
+					<img src="info.png" alt="Tour information" style="width:796px;height:140px">
+					<br>
+					<br>
+					<br>
+			</div>
+
+			<div style="clear:both"> </div>
+
+
+			<!--choosing the concert you want to attend part-->
+			<div id="section" style="font-size: 21px; float: center;">
+				<label for="concert-select">Choose a concert:</label>
+
+				<select id="concert-select">
+				    <option value="">--Please choose an option--</option>
+				    <option value="dog">Istanbul</option>
+				    <option value="cat">Germany</option>
+				    <option value="hamster">Netherlands</option>
+				    <option value="parrot">United Kingdom</option>
+				</select>
+
+				<br/>
+				<br/>
+				<button type="button" 
+		    		style="color: white; 
+		        		width:150px; height:50px; 
+		        		background-color: black;
+		        		display: inline-block">
+						<strong> BUY x1 </strong>
+				</button> 
+			</div>
+		</div>	<!--main body end-->
+
+		<!--cart/ sidebar-->
+		<aside>
+
+			<h3>View Your Ticket Information</h3>
+			<section class="basket">
+				<div class="item">
+					<h4>Ikonia Istanbul Concert (1 person)</h4>
+					<p class="price">
+						$200
+					</p>
+				</div>
+				
+				<div class="item">
+					<h4>Ikonia Istanbul Concert (1 person)</h4>
+					<p class="price">
+						$200
+					</p>
+				</div>
+
+			</section>	<!--basket end-->
+
+			<div class="total">
+				<h3>Total</h3>
+				<p class="price">
+					$400
+				</p>
+			</div>
+
+			<a href="order.html">
+				<div class="order">
+					<p>
+						BUY NOW
+					</p>
+				</div>
+			</a>
+
+			</br>
+			</br>
+			
+			<form action="/action_page.php">
+				<input type="checkbox" id="ticket" name="ticket" value="Ticket">
+				<label for="ticket"> I want my ticket information to be sent to my e-mail.</label><br> 
+			</form>
+
+		</aside>
+
+	</div> <!--id page end-->
+</body>
+</html>
